@@ -20,6 +20,7 @@ const Button: React.FC<ButtonProps> = ({
   const shapeClasses = {
     'rounded-sm': 'rounded-sm',
     'rounded-md': 'rounded-md',
+    'rounded-lg': 'rounded-lg',
     'rounded-full': 'rounded-full'
   }
 

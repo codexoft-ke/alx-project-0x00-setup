@@ -68,6 +68,12 @@ const Landing: React.FC = () => {
               onClick={() => handleButtonClick('Rounded Medium')}
             />
             <Button 
+              title="Rounded Large" 
+              styles=""
+              shape="rounded-lg" 
+              onClick={() => handleButtonClick('Rounded Large')}
+            />
+            <Button 
               title="Rounded Full" 
               styles=""
               shape="rounded-full" 
@@ -98,6 +104,13 @@ const Landing: React.FC = () => {
                   onClick={() => handleButtonClick('Small Rounded MD')}
                 />
                 <Button 
+                  title="Small + LG" 
+                  styles=""
+                  size="small" 
+                  shape="rounded-lg"
+                  onClick={() => handleButtonClick('Small Rounded LG')}
+                />
+                <Button 
                   title="Small + Full" 
                   styles=""
                   size="small" 
@@ -125,6 +138,13 @@ const Landing: React.FC = () => {
                   onClick={() => handleButtonClick('Medium Rounded MD')}
                 />
                 <Button 
+                  title="Medium + LG" 
+                  styles=""
+                  size="medium" 
+                  shape="rounded-lg"
+                  onClick={() => handleButtonClick('Medium Rounded LG')}
+                />
+                <Button 
                   title="Medium + Full" 
                   styles=""
                   size="medium" 
@@ -150,6 +170,13 @@ const Landing: React.FC = () => {
                   size="large" 
                   shape="rounded-md"
                   onClick={() => handleButtonClick('Large Rounded MD')}
+                />
+                <Button 
+                  title="Large + LG" 
+                  styles=""
+                  size="large" 
+                  shape="rounded-lg"
+                  onClick={() => handleButtonClick('Large Rounded LG')}
                 />
                 <Button 
                   title="Large + Full" 
