@@ -1,8 +1,9 @@
-import React from 'react'
 import { ButtonProps } from '@/interfaces'
+import React from 'react'
 
 const Button: React.FC<ButtonProps> = ({ 
   title, 
+  styles = '',
   size = 'medium', 
   shape = 'rounded-md',
   className = '',
@@ -26,7 +27,7 @@ const Button: React.FC<ButtonProps> = ({
   const baseClasses = 'bg-blue-500 hover:bg-blue-600 text-white font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50'
 
   // Combine all classes
-  const buttonClasses = `${baseClasses} ${sizeClasses[size]} ${shapeClasses[shape]} ${className}`
+  const buttonClasses = `${baseClasses} ${sizeClasses[size]} ${shapeClasses[shape]} ${styles} ${className}`
 
   return (
     <button 
